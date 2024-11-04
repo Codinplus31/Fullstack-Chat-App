@@ -13,8 +13,8 @@ export const databaseProviders = [
        host: 'bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com',
         port: 50013,
         username: 'uqzm1kkmllkly5xhheet',
-        password: 4QwqdfuWPtew9xA1LvkvZADnKB5apP,
-        database: 'link-chat-app'
+        password: '4QwqdfuWPtew9xA1LvkvZADnKB5apP',
+        database: 'bocxnrhccosiswskpz82'
         //connectionString: 'postgresql://uqzm1kkmllkly5xhheet:4QwqdfuWPtew9xA1LvkvZADnKB5apP@bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com:50013/bocxnrhccosiswskpz82'
               });
       sequelize.addModels([User, Message, Channel]);
