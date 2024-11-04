@@ -2,14 +2,7 @@ import { Sequelize } from 'sequelize-typescript';
 import { Channel } from 'src/channel/channel.entity';
 import { Message } from 'src/message/message.entity';
 import { User } from 'src/user/user.entity';
-const pool = new Pool({
-	    connectionString: "postgres://postgres.gdcvmyrcfgvbjlghntuk:TxDKcayEYb945xVs@aws-0-us-east-1.pooler.supabase.com:6543/postgres",
-	// ssl: {
- //        rejectUnauthorized: false, // This allows self-signed certificates
- //        ca: fs.readFileSync(path.join(__dirname, process.env.SSL_CERT_FILE)).toString() // Load the certificate
- //    }
-  
-})
+ 
 export const databaseProviders = [
   {
     provide: 'SEQUELIZE',
