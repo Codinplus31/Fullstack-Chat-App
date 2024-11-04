@@ -2,14 +2,20 @@ import { Sequelize } from 'sequelize-typescript';
 import { Channel } from 'src/channel/channel.entity';
 import { Message } from 'src/message/message.entity';
 import { User } from 'src/user/user.entity';
- 
+
+
 export const databaseProviders = [
   {
     provide: 'SEQUELIZE',
     useFactory: async () => {
       const sequelize = new Sequelize({
         dialect: 'postgres',
-        connectionString: 'postgresql://uqzm1kkmllkly5xhheet:4QwqdfuWPtew9xA1LvkvZADnKB5apP@bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com:50013/bocxnrhccosiswskpz82'
+       host: 'bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com',
+        port: 50013,
+        username: 'uqzm1kkmllkly5xhheet',
+        password: 4QwqdfuWPtew9xA1LvkvZADnKB5apP,
+        database: 'link-chat-app'
+        //connectionString: 'postgresql://uqzm1kkmllkly5xhheet:4QwqdfuWPtew9xA1LvkvZADnKB5apP@bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com:50013/bocxnrhccosiswskpz82'
               });
       sequelize.addModels([User, Message, Channel]);
       await sequelize.sync();
