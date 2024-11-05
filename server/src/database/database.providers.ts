@@ -1,7 +1,7 @@
 import { Sequelize } from 'sequelize-typescript';
-import { Channel } from 'src/channel/channel.entity';
-import { Message } from 'src/message/message.entity';
-import { User } from 'src/user/user.entity';
+import { Channel } from '../channel/channel.entity';
+import { Message } from '../message/message.entity';
+import { User } from '../user/user.entity';
 
 
 export const databaseProviders = [
