@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Op } from 'sequelize';
-import { Message } from 'src/message/message.entity';
-import { User } from 'src/user/user.entity';
+import { Message } from '../message/message.entity';
+import { User } from '../user/user.entity';
 import { Channel } from './channel.entity';
 import { ChannelDto } from './dto/create-channel-dto';
 
