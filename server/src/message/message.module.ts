@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { UserModule } from '../user/user.module';
+import { UserModule } from '../../user/user.module';
 import { MessageController } from './message.controller';
 import { MessageProvider } from './message.provider';
 import { MessageService } from './message.service';
