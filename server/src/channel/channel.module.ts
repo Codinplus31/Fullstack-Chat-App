@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { MessageModule } from "../../message/message.module";
+import { MessageModule } from "../message/message.module";
 import { ChannelController } from "./channel.controller";
 import { ChannelGateway } from "./channel.gateway";
 import { ChannelProvider } from "./channel.provider";
