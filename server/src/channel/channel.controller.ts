@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { Delete, Put } from '@nestjs/common/decorators';
-import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
 import { ChannelService } from './channel.service';
 import { ChannelDto } from './dto/create-channel-dto';
 
