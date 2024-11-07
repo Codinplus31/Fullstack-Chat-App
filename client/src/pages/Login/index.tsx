@@ -14,7 +14,7 @@ const Login = () => {
   const [lastUser, setLastUser] = useState<string>(Cookies.get('last_user') || '');
 
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center items-center h-[100vh] overflow-scroll">
       <div className="bg-neutral-800 px-3 py-10 shadow-lg rounded-md text-white min-h-[500px] w-full sm:w-[400px] overflow-y-scroll h-full sm:h-[100vh]>
         {
           isFormOpen
