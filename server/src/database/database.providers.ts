@@ -15,7 +15,12 @@ export const databaseProviders = [
         username: 'uqzm1kkmllkly5xhheet',
         password: '4QwqdfuWPtew9xA1LvkvZADnKB5apP',
         database: 'bocxnrhccosiswskpz82',
-           dialectModule: pg
+           dialectModule: pg,
+pool: {
+     max: 5,
+     min: 0,
+     idle: 10000
+        }
         //connectionString: 'postgresql://uqzm1kkmllkly5xhheet:4QwqdfuWPtew9xA1LvkvZADnKB5apP@bocxnrhccosiswskpz82-postgresql.services.clever-cloud.com:50013/bocxnrhccosiswskpz82'
               });
 
