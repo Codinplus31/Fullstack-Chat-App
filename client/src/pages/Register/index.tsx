@@ -11,7 +11,7 @@ const Register = () => {
   const [isFormOpen, setIsFormOpen] = useState<boolean>(true);
 
   return (
-    <div className='flex justify-center items-center w-full h-[100vh]'>
+    <div className='flex justify-center items-center w-full h-[100vh] overflow-scroll'>
       <div className='py-10 md:py-5 w-full h-full sm:h-auto sm:w-[400px] bg-neutral-800 shadow-lg rounded-md text-white'>
         {
           isFormOpen
